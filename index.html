@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRT Bike Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "primary-color": '#E76F51',
+                        "bg-primary-color": '#E76F511A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="poppins">
+    <header class="mt-12 mx-2 lg:mx-40 space-y-12">
+        <nav class="flex items-center">
+            <div class="navbar bg-[#FFF]">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-[#c7b5b5] rounded-box">
+                            <li><a class="font-medium">Home</a></li>
+                            <li><a class="font-medium">Shop</a></li>
+                            <li><a class="font-medium">News</a></li>
+                            <li><a class="font-medium">Contact</a></li>
+                            <li><a class="font-medium">Login</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl lg:text-4xl font-bold">MRT Bike Zone</a>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal text-base px-1">
+                        <li><a class="font-medium text-xl">Home</a></li>
+                        <li><a class="font-medium text-xl">Shop</a></li>
+                        <li><a class="font-medium text-xl">News</a></li>
+                        <li><a class="font-medium text-xl">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a
+                        class="btn bg-primary-color invisible lg:visible px-12 text-xl font-bold text-[#FFFFFF] text-center">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!-- bannar section  -->
+        <div class="carousel w-full bg-bg-primary-color">
+            <!-- bike 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-x-40 p-5 lg:p-[104px]">
+                    <div class="space-y-5 flex-1">
+                        <h2 class="text-6xl font-bold text-[#000]">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p class="text-base font-light text-[#000000CC]">
+                            Amet minim mollit non deserunt ullamco
+                            <br>
+                            est sit aliqua dolor do amet sint. Velit officia consequat
+                            <br>
+                            duis enim velit mollit.
+                        </p>
+                        <button class="px-8 py-4 text-[#FFF] text-xl font-semibold bg-primary-color rounded-lg">Purchase</button>
+
+                    </div>
+                    <div>
+                        <img src="images/slider/bike1.png"/>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- bike 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-x-40 p-5 lg:p-[104px]">
+                    <div class="space-y-5 flex-1">
+                        <h2 class="text-6xl font-bold text-[#000]">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p class="text-base font-light text-[#000000CC]">
+                            Amet minim mollit non deserunt ullamco
+                            <br>
+                            est sit aliqua dolor do amet sint. Velit officia consequat
+                            <br>
+                            duis enim velit mollit.
+                        </p>
+                        <button class="px-8 py-4 text-[#FFF] text-xl font-semibold bg-primary-color rounded-lg">Purchase</button>
+
+                    </div>
+                    <div>
+                        <img src="images/slider/bike2.png"/>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- bike3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-x-40 p-5 lg:p-[104px]">
+                    <div class="space-y-5 flex-1">
+                        <h2 class="text-6xl font-bold text-[#000]">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p class="text-base font-light text-[#000000CC]">
+                            Amet minim mollit non deserunt ullamco
+                            <br>
+                            est sit aliqua dolor do amet sint. Velit officia consequat
+                            <br>
+                            duis enim velit mollit.
+                        </p>
+                        <button class="px-8 py-4 text-[#FFF] text-xl font-semibold bg-primary-color rounded-lg">Purchase</button>
+
+                    </div>
+                    <div>
+                        <img src="images/slider/bike3.png"/>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- bike 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-x-40 p-5 lg:p-[104px]">
+                    <div class="space-y-5 flex-1">
+                        <h2 class="text-6xl font-bold text-[#000]">
+                            Ride-on R15 V4
+                            <br>
+                            with Smile
+                        </h2>
+                        <p class="text-base font-light text-[#000000CC]">
+                            Amet minim mollit non deserunt ullamco
+                            <br>
+                            est sit aliqua dolor do amet sint. Velit officia consequat
+                            <br>
+                            duis enim velit mollit.
+                        </p>
+                        <button class="px-8 py-4 text-[#FFF] text-xl font-semibold bg-primary-color rounded-lg">Purchase</button>
+
+                    </div>
+                    <div>
+                        <img src="images/slider/bike4.png"/>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
